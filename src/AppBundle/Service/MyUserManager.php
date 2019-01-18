@@ -14,7 +14,7 @@ class MyUserManager extends UserManager
     {
         $user = parent::findUserByUsernameOrEmail($usernameOrEmail);
         if (null === $user) {
-            $userAddOnEmailRepo = $this->objectManager->getRepository('UserBundle:UserAddOnEmail');
+            $userAddOnEmailRepo = $this->objectManager->getRepository('AppBundle:UserAddOnEmail');
             $userAddOnEmail = $userAddOnEmailRepo->findOneBy(['email' => $usernameOrEmail]);
             if ($userAddOnEmail) {
                 $user = $userAddOnEmail->getUser();
