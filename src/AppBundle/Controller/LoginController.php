@@ -41,7 +41,7 @@ class LoginController extends Controller
         }
 
         $token = $this->getToken($user);
-        $response = new Response($this->serialize(['token' => $token]), Response::HTTP_OK);
+        $response = new Response($this->serialize(['token' => $token,'user_canonical' => $user->getUsernameCanonical() ,'user_email' => $user->getEmail() ,'user_id' => $user->getId() ]), Response::HTTP_OK);
 
         return $this->setBaseHeaders($response);
     }
