@@ -17,7 +17,7 @@ class CharacterController extends Controller
 
     /**
      * @Route("/getcharacters", name="get_characters")
-     * @Method("GET")
+     * @Method("POST")
      */
     public function listAction(Request $request)
     {
