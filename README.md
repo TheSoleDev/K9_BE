@@ -3,6 +3,7 @@ Symfony version 3.3
 
 
 The FOSUserBundle is uesd for the user authentication.
+
 MySQL is used for the Database and Doctrine ORM on Symfony 
 
 TO SETUP THE DATABASE RUN THE FOLLOWING COMMAND
