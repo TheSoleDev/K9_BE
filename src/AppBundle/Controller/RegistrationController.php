@@ -50,7 +50,7 @@ class RegistrationController extends BaseController
 
             $userManager->updateUser($user);
 
-            $response = new Response($this->serialize('User created.'), Response::HTTP_CREATED);
+            $response = new Response($this->serialize(['success' => 'true']), Response::HTTP_CREATED);
         } else {
             throw $this->throwApiProblemValidationException($form);
         }
