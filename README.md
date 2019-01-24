@@ -10,7 +10,7 @@ TO SETUP THE DATABASE RUN THE FOLLOWING COMMAND
 -----------------------------------------------
 $ php bin/console doctrine:schema:update --force
 
-$ php bin/console doctrine:mongodb:schema:create --index
+$ php bin/console doctrine:schema:create
 
 
 TO RUN THE APP
